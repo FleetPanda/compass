@@ -21,7 +21,7 @@ Gem::Specification.new do |gemspec|
                          "~> #{File.read(File.join(File.dirname(__FILE__), '..', 'import-once', 'VERSION')).strip}"
   gemspec.add_dependency 'rb-fsevent', '>= 0.9.3'
   gemspec.add_dependency 'rb-inotify', '>= 0.9'
-  gemspec.add_dependency 'sass', '>= 3.3.13', '< 3.7.4'
+  gem.add_dependency 'sass-rails', '~> 6.0.0'
 
   gemspec.post_install_message = <<-MESSAGE
     Compass is charityware. If you love it, please donate on our behalf at http://umdf.org/compass Thanks!
